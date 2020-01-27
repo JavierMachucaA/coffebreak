@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [{ "src": "backend/server/server.js", "use": "@now/node-server" }],
+    "routes": [
+        {
+          "src": "/",
+          "dest": "backend/server/server.js",
+          "methods": ["GET"]
+        },
+        {
+          "src": "/users",
+          "dest": "backend/server/server.js",
+          "methods": ["GET"]
+        },
+        {
+          "src": "/usersdb",
+          "dest": "backend/server/server.js",
+          "methods": ["GET"]
+        },
+        {
+          "src": "/user",
+          "dest": "backend/server/server.js",
+          "methods": ["POST"]
+        }
+      ]
+}
